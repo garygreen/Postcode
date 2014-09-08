@@ -1,0 +1,22 @@
+{
+    "name": "greeneh/postcode",
+    "description": "Unified search for postcodes across various different providers.",
+    "authors": [
+        {
+            "name": "Gary Green",
+            "email": "holegary@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Greeneh\\Postcode\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
