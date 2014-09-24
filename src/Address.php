@@ -13,6 +13,7 @@ class Address implements \JsonSerializable
 		'latitude',
 		'longitude',
 		'source',
+		'postcode',
 	);
 
 	/**
