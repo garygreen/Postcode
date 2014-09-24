@@ -6,17 +6,21 @@ Simple searching for postcodes to retrieve geographic information. Support for v
 
 ## Installation
 
+With composer - add to your `requires` section:
+
+- "greeneh/postcode": "~0.0.1"
+
 ### Laravel Specific
 
 Add the following to your `config/app.php` 
 
 1. `providers` array:
 
-	'Greeneh\Postcode\PostcodeServiceProvider',
+  'Greeneh\Postcode\PostcodeServiceProvider',
 
 2. `aliases` array
-	
-	'Postcode' => 'Greeneh\Postcode\Facades\Postcode',
+  
+  'Postcode' => 'Greeneh\Postcode\Facades\Postcode',
 
 ## Usage
 
@@ -70,6 +74,6 @@ Postcode::getCoordinates('E16 1FW')
 
 ```php
 array (size=2)
-	'latitude' => float 51.6359841
-	'longitude' => float 0.2919168
+  'latitude' => float 51.6359841
+  'longitude' => float 0.2919168
 ```
