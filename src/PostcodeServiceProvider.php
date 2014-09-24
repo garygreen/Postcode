@@ -35,7 +35,6 @@ class PostcodeServiceProvider extends ServiceProvider {
 		$this->app['postcode'] = $this->app->share(function($app)
 		{
 			$postcodeConfig = $app['config']->get('postcode::config');
-			dd($postcodeConfig);
 			$providerClass  = $postcodeConfig['provider'];
 			$provider       = new $providerClass($postcodeConfig['api_key']);
 			return new Postcode($provider);
